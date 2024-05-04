@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  capitalflow-api:
+    image: postgres
+    container_name: capitalflow-api
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
